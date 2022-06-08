@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+            background-color: lightblue;
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+        }
+        footer {
+            text-align: center;
+            color: white;
+        }
+        .hora {
+            text-align: center;
+        }
+        .quadro {
+            text-align: center;
+        }
+        #imagem {
+            width: 200px;
+            border-radius: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div class="birth">
+            <p id="ano">
+                Ano de nascimento: 
+                <input type="number" name="txtano" id="txtano">
+            </p>
+        </div>
+        <div class="gender">
+            <p>
+                Sexo:
+                <input type="radio" name="radgender" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radgender" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" onclick="verificar()" value="Verificar">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+    </section>
+    <script src="ex002.js"></script>
+</body>
+</html>

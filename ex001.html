@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+            background-color: lightblue;
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+        }
+        footer {
+            text-align: center;
+            color: white;
+        }
+        .hora {
+            text-align: center;
+        }
+        .quadro {
+            text-align: center;
+        }
+        #imagem {
+            width: 200px;
+            border-radius: 600px;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <section>
+        <div class="hora">
+            <p id="horas">Agora são 16 horas.</p>
+        </div>
+        <div class="quadro">
+            <img id="imagem" src="manhã.jpg">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em vídeo</p>
+    </footer>
+    <script src="ex001.js"></script>
+</body>
+</html>
