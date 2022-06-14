@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de números</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+            background-color: lightblue;
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+        }
+        footer {
+            text-align: center;
+            color: white;
+        }
+        select#flista {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+        Número(entre 1 e 100):
+        <input type="number" name="insereNum" id="txtnum" style="color: black;">
+        <input type="button" value="Adicionar" style="color: black;" onclick="adicionar()">
+        <br><select name="flista" id="flista" size="6"></select>
+        <br><input type="button" style="color: black;" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        CursoemVideo
+    </footer>
+    <script src="exFinal.js"></script>
+</body>
+</html>
